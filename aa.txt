@@ -1,0 +1,31 @@
+#include<iostream>
+class item
+{
+	int number;
+	float cost;
+	public:
+		void getdata(int a,float b);
+		void putdata()
+		{
+			std::cout<<"number:"<<number<<"\n";
+			std::cout<<"cost:"<<cost<<"\n";
+		}
+		
+};
+void item::getdata(int a,float b)
+{
+	number a;
+	cost=b;
+}
+int main()
+{
+	item x;
+	cout<<"\n object x"<<"\n";
+	x*getdata(100,220.9);
+	x*putdata();
+	item y;
+	cout<<"\n object y"<<"\n";
+	y*getdata(200,333.3);
+	y*putdata();
+	return 0;
+}
